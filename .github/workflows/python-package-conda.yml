@@ -23,7 +23,7 @@ jobs:
         conda env update --file environment.yml --name base
     - name: Lint with flake8
       run: |
-        conda install pandas dash
+        pip install pandas dash
     - name: Test with pytest
       run: |
         python Dashboard.py
