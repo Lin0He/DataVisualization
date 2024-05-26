@@ -1,9 +1,0 @@
-name: DA
-channels:
-  - defaults
-dependencies:
-  - pandas
-  - numpy
-  - plotly
-
-
