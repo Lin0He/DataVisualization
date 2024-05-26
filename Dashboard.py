@@ -40,7 +40,7 @@ fig8 = px.line(distribute_trend, x = "Year", y = "Total Distribution")
 fig9 = px.line(supply_trend, x = "Year", y = "Total Supply")
 
 app = Dash()
-
+server = app.server
 app.layout = [
 
     html.H1(children='Coffee Data Analysis', style={'textAlign':'center'}),
@@ -136,4 +136,4 @@ def update_graph(country_value, indicate_selection, indicate_selection0):
     return fig, fig0
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=False)
