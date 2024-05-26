@@ -37,7 +37,7 @@ fig7 = px.line(export_trend, x = "Year", y = "Exports")
 fig8 = px.line(distribute_trend, x = "Year", y = "Total Distribution")
 fig9 = px.line(supply_trend, x = "Year", y = "Total Supply")
 
-app = Dash()
+app = Dash(__name__)
 server = app.server
 app.layout = [
 
