@@ -134,4 +134,4 @@ def update_graph(country_value, indicate_selection, indicate_selection0):
     return fig, fig0
 
 if __name__ == '__main__':
-    app.run_server(host="0.0.0.0", debug=True)
+    app.run(debug=True)
